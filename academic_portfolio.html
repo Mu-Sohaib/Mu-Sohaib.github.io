@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Muhammad Sohaib, PhD | Academic Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .tab-btn.active {
+      border-color: #2563eb;
+      color: #2563eb;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-3">
+        <img src="Professional Corporate Headshot.png" alt="Dr. Muhammad Sohaib" class="w-12 h-12 object-cover rounded-full border border-blue-600 shadow-sm" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%232563eb\'><path d=\'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z\'/></svg>';">
+        <div>
+          <h1 class="text-2xl font-bold text-gray-900">Dr. Muhammad Sohaib, PhD</h1>
+          <p class="text-sm text-gray-600">Senior AI & Data Science Researcher | Ex-Department Chair</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="https://scholar.google.com/citations?user=woH7_7sAAAAJ" target="_blank" class="px-3 py-1.5 bg-blue-50 text-blue-700 text-xs font-semibold rounded-md border border-blue-200 hover:bg-blue-100 transition">
+          <i class="fa-brands fa-google text-blue-600 mr-1"></i> Scholar (1,317+ Cites)
+        </a>
+        <a href="mailto:md.sohaibdurrani@gmail.com" class="px-3 py-1.5 bg-gray-900 text-white text-xs font-semibold rounded-md hover:bg-gray-800 transition">
+          <i class="fa-solid fa-envelope mr-1"></i> Contact
+        </a>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex space-x-8 border-t border-gray-100 overflow-x-auto" aria-label="Tabs">
+        <button onclick="switchTab('about')" id="tab-about" class="tab-btn active py-3 px-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700 whitespace-nowrap">Biography & Overview</button>
+        <button onclick="switchTab('experience')" id="tab-experience" class="tab-btn py-3 px-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700 whitespace-nowrap">Professional Experience</button>
+        <button onclick="switchTab('publications')" id="tab-publications" class="tab-btn py-3 px-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700 whitespace-nowrap">Publications & Research</button>
+        <button onclick="switchTab('grants')" id="tab-grants" class="tab-btn py-3 px-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700 whitespace-nowrap">Grants & Projects</button>
+        <button onclick="switchTab('teaching')" id="tab-teaching" class="tab-btn py-3 px-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700 whitespace-nowrap">Teaching & Supervision</button>
+        <button onclick="switchTab('awards')" id="tab-awards" class="tab-btn py-3 px-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:text-gray-700 whitespace-nowrap">Awards & Honors</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow w-full">
+
+    <!-- 1. BIOGRAPHY TAB -->
+    <div id="content-about" class="tab-content">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="md:col-span-1 bg-white p-6 rounded-xl border border-gray-200 shadow-sm text-center">
+          <img src="Professional Corporate Headshot.png" alt="Dr. Muhammad Sohaib" class="w-32 h-32 object-cover rounded-full mx-auto mb-4 border-2 border-blue-600 shadow-md" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%232563eb\'><path d=\'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z\'/></svg>';">
+          <h2 class="text-xl font-bold text-gray-900">Dr. Muhammad Sohaib</h2>
+          <p class="text-xs text-gray-500 mb-4">University of Derby, UK</p>
+          <hr class="my-4">
+          <div class="space-y-3 text-xs text-left">
+            <div><strong class="text-gray-700">Email:</strong> md.sohaibdurrani@gmail.com</div>
+            <div><strong class="text-gray-700">Phone:</strong> +44 7884528028</div>
+            <div><strong class="text-gray-700">IEEE Member:</strong> #98013908</div>
+            <div><strong class="text-gray-700">PEC License:</strong> COMP/8867</div>
+          </div>
+        </div>
+
+        <div class="md:col-span-2 space-y-6">
+          <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+            <h3 class="text-lg font-bold text-gray-900 mb-3">Biography</h3>
+            <p class="text-sm text-gray-600 leading-relaxed mb-3">
+              Dr. Muhammad Sohaib is an academic scholar and researcher specializing in Artificial Intelligence, Explainable AI (XAI), Machine Learning, and Signal Processing. His research focuses on developing advanced data-driven models, multi-modal sensing frameworks, and intelligent systems for fault diagnosis and prognosis.
+            </p>
+            <p class="text-sm text-gray-600 leading-relaxed">
+              Bringing extensive university-level teaching and academic leadership experience, Dr. Sohaib has spearheaded curriculum development, module delivery, and institutional quality assurance while supervising numerous postgraduate research projects. He actively contributes to high-impact research initiatives alongside global academic and industrial collaborators.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-3 gap-4">
+            <div class="bg-blue-50 border border-blue-100 p-4 rounded-xl text-center">
+              <span class="block text-2xl font-bold text-blue-700">1,317+</span>
+              <span class="text-xs text-blue-600 font-medium">Google Scholar Citations</span>
+            </div>
+            <div class="bg-blue-50 border border-blue-100 p-4 rounded-xl text-center">
+              <span class="block text-2xl font-bold text-blue-700">18</span>
+              <span class="text-xs text-blue-600 font-medium">h-index</span>
+            </div>
+            <div class="bg-blue-50 border border-blue-100 p-4 rounded-xl text-center">
+              <span class="block text-2xl font-bold text-blue-700">23</span>
+              <span class="text-xs text-blue-600 font-medium">i10-index</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. EXPERIENCE TAB -->
+    <div id="content-experience" class="tab-content hidden space-y-4">
+      <h2 class="text-xl font-bold text-gray-900 mb-4">Professional Experience</h2>
+
+      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm">
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-bold text-gray-900">Researcher in Data Science</h3>
+            <p class="text-xs text-gray-500">University of Derby, Derbyshire, UK</p>
+          </div>
+          <span class="text-xs font-semibold px-2.5 py-1 bg-green-100 text-green-700 rounded-full">May 2025 - Present</span>
+        </div>
+        <p class="text-xs text-gray-600 mt-2">Working on data-driven research across Digital Society, Collaborative & Data-Centric Engineering, and Digital Health & Well-Being clusters.</p>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm">
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-bold text-gray-900">Postdoctoral Research Fellow</h3>
+            <p class="text-xs text-gray-500">Zhejiang Normal University, Zhejiang, China</p>
+          </div>
+          <span class="text-xs font-semibold px-2.5 py-1 bg-blue-100 text-blue-700 rounded-full">Apr 2023 - Apr 2025</span>
+        </div>
+        <p class="text-xs text-gray-600 mt-2">Awarded research fellowship leading multi-modal sensing frameworks for fault diagnosis, XAI, and data quality assessment.</p>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm">
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-bold text-gray-900">Assistant Professor & Department Chairperson</h3>
+            <p class="text-xs text-gray-500">Lahore Garrison University, Lahore, Pakistan</p>
+          </div>
+          <span class="text-xs font-semibold px-2.5 py-1 bg-gray-100 text-gray-700 rounded-full">Sep 2019 - Mar 2023</span>
+        </div>
+        <p class="text-xs text-gray-600 mt-2">Head of Department of Software Engineering. Led curriculum development, module delivery, faculty mentorship, and postgraduate research supervision.</p>
+      </div>
+    </div>
+
+    <!-- 3. PUBLICATIONS TAB -->
+    <div id="content-publications" class="tab-content hidden space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
+        <div>
+          <h2 class="text-xl font-bold text-gray-900">Publications & Research</h2>
+          <p class="text-xs text-gray-500">Total Citations: 1,317+ | h-index: 18 | i10-index: 23</p>
+        </div>
+        <input type="text" id="pubSearch" onkeyup="filterPubs()" placeholder="Search publications..." class="px-3 py-1.5 border border-gray-300 rounded-lg text-xs w-full sm:w-64 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+
+      <div id="pubList" class="space-y-3">
+        <!-- Journal Papers -->
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2025)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">Optimizing learning outcomes: a deep dive into hybrid AI models for adaptive educational feedback</h3>
+          <p class="text-xs text-gray-500 mt-1">H. M. Qadir et al. | <em>Journal of Big Data</em> 12.1 (2025): 144</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2025)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">An adaptive feedback system for the improvement of learners</h3>
+          <p class="text-xs text-gray-500 mt-1">H. M. Qadir et al. | <em>Scientific Reports</em> 15.1 (2025): 17242</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2025)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">Deep Learning in Industrial Machinery: A Critical Review of Bearing Fault Classification Methods</h3>
+          <p class="text-xs text-gray-500 mt-1">A. U. Rehman et al. | <em>Applied Soft Computing</em>, p. 112785, 2025</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2024)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">Evaluating YOLO Models for Efficient Crack Detection in Concrete Structures Using Transfer Learning</h3>
+          <p class="text-xs text-gray-500 mt-1">M. Sohaib, M. Arif, J.-M. Kim | <em>Buildings</em>, vol. 14, no. 12, p. 3928, 2024</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2024)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">A robust self-supervised approach for fine-grained crack detection in concrete structures</h3>
+          <p class="text-xs text-gray-500 mt-1">M. Sohaib, M. J. Hasan, M. A. Shah, Z. Zheng | <em>Scientific Reports</em>, vol. 14, no. 1, p. 12646, 2024</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2024)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">A Multichannel Analysis of Imbalanced Computed Tomography Data for Lung Cancer Classification</h3>
+          <p class="text-xs text-gray-500 mt-1">M. Sohaib, M. J. Hasan, Z. Zheng | <em>Measurement Science and Technology</em>, 2024</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2024)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">Generalizing Infrastructure Inspection: Step Transfer Learning Aided Extreme Learning Machine for Automated Crack Detection in Concrete Structures</h3>
+          <p class="text-xs text-gray-500 mt-1">M. Sohaib, M. J. Hasan, J. Chen, Z. Zheng | <em>Measurement Science and Technology</em>, 2024</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2024)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">An Ensemble Approach for Robust Automated Crack Detection and Segmentation in Concrete Structures</h3>
+          <p class="text-xs text-gray-500 mt-1">M. Sohaib, S. Jamil, J.-M. Kim | <em>Sensors</em>, vol. 24, no. 1, p. 257, 2024</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2023)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">Efficient fault detection of rotor minor inter-turn short circuit in induction machines using wavelet transform and empirical mode decomposition</h3>
+          <p class="text-xs text-gray-500 mt-1">A. U. Rehman et al. | <em>Sensors</em>, vol. 23, no. 16, p. 7109, 2023</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2022)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">Automated Analysis of Sleep Study Parameters Using Signal Processing and Artificial Intelligence</h3>
+          <p class="text-xs text-gray-500 mt-1">M. Sohaib, A. Ghaffar, J. Shin, M. J. Hasan, M. T. Suleman | <em>Int. J. Environ. Res. Public Health</em> 19, 13256, 2022</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2022)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">Gearbox Fault Diagnosis using Improved Feature Representation and Multitask Learning</h3>
+          <p class="text-xs text-gray-500 mt-1">M. Sohaib, S. Munir, M. M. M. Islam, J. Shin, F. Tariq, M. Rashid, J.-M. Kim | <em>Frontiers in Energy Research</em>, 2022</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2021)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">Deep Learning Aided Data-Driven Fault Diagnosis of Rotatory Machine: A Comprehensive Review</h3>
+          <p class="text-xs text-gray-500 mt-1">S. Mushtaq, M. M. M. Islam, M. Sohaib | <em>Energies</em>, vol. 14, no. 16, 2021</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2021)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">An Explainable AI-Based Fault Diagnosis Model for Bearings</h3>
+          <p class="text-xs text-gray-500 mt-1">M. J. Hasan, M. Sohaib, J.-M. Kim | <em>Sensors</em>, vol. 21, no. 12, 2021</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2020)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">A Multitask-Aided Transfer Learning-Based Diagnostic Framework for Bearings under Inconsistent Working Conditions</h3>
+          <p class="text-xs text-gray-500 mt-1">M. J. Hasan, M. Sohaib, J.-M. Kim | <em>Sensors</em>, vol. 20, no. 24, p. 7205, 2020</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2020)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">An SVM-Based Neural Adaptive Variable Structure Observer for Fault Diagnosis and Fault-Tolerant Control of a Robot Manipulator</h3>
+          <p class="text-xs text-gray-500 mt-1">F. Piltan, A. E. Prosvirin, M. Sohaib, B. Saldivar, J.-M. Kim | <em>Appl. Sci.</em>, vol. 10, no. 4, p. 1344, 2020</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2019)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">Fault Diagnosis of Rotary Machine Bearings Under Inconsistent Working Conditions</h3>
+          <p class="text-xs text-gray-500 mt-1">M. Sohaib, J.-M. Kim | <em>IEEE Transactions on Instrumentation and Measurement</em>, 69(6), 3334-3347, 2019</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2019)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">Data Driven Leakage Detection and Classification of a Boiler Tube</h3>
+          <p class="text-xs text-gray-500 mt-1">M. Sohaib, J.-M. Kim | <em>Appl. Sci.</em>, vol. 9, no. 12, p. 2450, 2019</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2019)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">A Reliable Acoustic EMISSION Based Technique for the Detection of a Small Leak in a Pipeline System</h3>
+          <p class="text-xs text-gray-500 mt-1">T. B. Quy, S. Muhammad, J.-M. Kim | <em>Energies</em>, vol. 12, no. 8, p. 1472, 2019</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2019)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">Improving the Performance of Storage Tank Fault Diagnosis by Removing Unwanted Components and Utilizing Wavelet-Based Features</h3>
+          <p class="text-xs text-gray-500 mt-1">V. Tra, B.-P. Duong, J.-Y. Kim, M. Sohaib, J.-M. Kim | <em>Entropy</em>, vol. 21, no. 2, p. 145, 2019</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2019)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">Leakage Detection of a Spherical Water Storage Tank in a Chemical Industry Using Acoustic Emissions</h3>
+          <p class="text-xs text-gray-500 mt-1">M. Sohaib, M. Islam, J. Kim, D.-C. Jeon, J.-M. Kim | <em>Appl. Sci.</em>, vol. 9, no. 1, p. 196, 2019</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2018)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">Crack Classification of a Pressure Vessel Using Feature Selection and Deep Learning Methods</h3>
+          <p class="text-xs text-gray-500 mt-1">M. Islam, M. Sohaib, J. Kim, J.-M. Kim | <em>Sensors</em>, vol. 18, no. 12, p. 4379, 2018</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2018)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">Reliable Fault Diagnosis of Rotary Machine Bearings Using a Stacked Sparse Autoencoder-Based Deep Neural Network</h3>
+          <p class="text-xs text-gray-500 mt-1">M. Sohaib, J.-M. Kim | <em>Shock and Vibration</em>, vol. 2018, Art. no. 2919637, 2018</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2017)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">A Hybrid Feature Model and Deep-Learning-Based Bearing Fault Diagnosis</h3>
+          <p class="text-xs text-gray-500 mt-1">M. Sohaib, C.-H. Kim, J.-M. Kim | <em>Sensors</em>, vol. 17, no. 12, p. 2876, 2017</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2017)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">A Robust Deep Learning Based Fault Diagnosis of Rotary Machine Bearings</h3>
+          <p class="text-xs text-gray-500 mt-1">M. Sohaib, J.-M. Kim | <em>Advanced Science Letters</em>, vol. 23, no. 12, pp. 12797-12801, 2017</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2013)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">Machine Learning Based Intelligent System for IP Traffic Classification</h3>
+          <p class="text-xs text-gray-500 mt-1">M. Sohaib, A. Khalil, K. Ahmad, J. Khan, F. Imtiaz | <em>Sindh Univ. Res. Jour.</em>, Vol. 45, issue 4, pp 731-736, 2013</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-blue-600 font-semibold">Journal Paper (2013)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">Image Enhancement for the 3-D Reconstruction in the Uncontrolled Environment using Shape from Silhouette</h3>
+          <p class="text-xs text-gray-500 mt-1">M. Sohaib, N. Ahmed, N. Minallah | <em>International Journal of Computer Applications</em>, Vol.70, No.11, 2013</p>
+        </div>
+
+        <!-- Conference Papers -->
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-purple-600 font-semibold">Conference Proceeding (2019)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">Higher Order Spectral Analysis of Vibration Signals and Convolutional Neural Network for Fault Diagnosis of Induction Motor Bearings</h3>
+          <p class="text-xs text-gray-500 mt-1">M. Sohaib, J.-M. Kim | <em>Springer International Publishing</em>, Cham, pp. 3-12, 2019</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-purple-600 font-semibold">Conference Proceeding (2019)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">1D CNN-Based Transfer Learning Model for Bearing Fault Diagnosis Under Variable Working Conditions</h3>
+          <p class="text-xs text-gray-500 mt-1">M. J. Hasan, M. Sohaib, J.-M. Kim | <em>Springer International Publishing</em>, Cham, pp. 13-23, 2019</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-purple-600 font-semibold">Conference Proceeding (2019)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">Fault Diagnosis of a Robot Manipulator Based on an ARX-Laguerre Fuzzy PID Observer</h3>
+          <p class="text-xs text-gray-500 mt-1">F. Piltan, M. Sohaib, J.-M. Kim | <em>Springer International Publishing</em>, Cham, pp. 393-407, 2019</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-purple-600 font-semibold">Conference Proceeding (2018)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">Hierarchical Radial Basis Function based Multiclass Support Vector Machines and A Hybrid Feature Pool for Bearings Fault Diagnosis</h3>
+          <p class="text-xs text-gray-500 mt-1">M. Sohaib, J.-M. Kim | <em>5th ICEE, UET Lahore</em>, 2018</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-purple-600 font-semibold">Conference Proceeding (2017)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">Quantitative Assessment of Heart Function: A Hybrid Mechanism for Left Ventricle Segmentation from Cine MRI Sequences</h3>
+          <p class="text-xs text-gray-500 mt-1">M. Sohaib, J.-M. Kim | <em>Springer International Publishing</em>, Cham, pp. 169-179, 2017</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-purple-600 font-semibold">Conference Proceeding (2017)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">A Deep Neural Network and A Hybrid Feature Pool for Bearing Fault Diagnosis</h3>
+          <p class="text-xs text-gray-500 mt-1">M. Sohaib, J.-M. Kim | <em>Engineering and Arts Society Korea</em>, UOU, vol. 15, no. 1, 2017</p>
+        </div>
+
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-purple-600 font-semibold">Conference Proceeding (2017)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">Automated Feature Extraction for detecting Brain Tumors in Magnetic Resonance Imaging using a Genetic Algorithm</h3>
+          <p class="text-xs text-gray-500 mt-1">M. Hasan, J. D. Appana, M. Sohaib, K. Jong-Myon | <em>IFOST 2017</em>, Ulsan, South Korea, 2017</p>
+        </div>
+
+        <!-- Book Chapter -->
+        <div class="pub-item bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
+          <span class="text-xs text-emerald-600 font-semibold">Book Chapter (2021)</span>
+          <h3 class="text-sm font-bold text-gray-900 mt-1">Deep Learning for Data-Driven Predictive Maintenance</h3>
+          <p class="text-xs text-gray-500 mt-1">M. Sohaib, S. Mushtaq, J. Uddin | <em>Vision, Sensing and Analytics: Integrative Approaches</em>, Springer, Cham, vol. 207, pp. 71-95, 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. GRANTS & PROJECTS TAB -->
+    <div id="content-grants" class="tab-content hidden space-y-6">
+      <h2 class="text-xl font-bold text-gray-900 mb-4">Grants, Fellowships & Sponsored Projects</h2>
+      
+      <!-- EMIZ Prototype Showcase -->
+      <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-200 shadow-sm space-y-4">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+          <div>
+            <span class="text-xs font-bold text-blue-700 bg-blue-100 px-2.5 py-1 rounded-full uppercase tracking-wider">Featured Research Prototype</span>
+            <h3 class="text-lg font-bold text-gray-900 mt-2">AI for Computational Fluid Dynamics: Machine Learning Framework for CFD Error Correction</h3>
+            <p class="text-xs text-gray-600">EMIZ Freight Locomotive Hydrogen Retrofit Project | University of Derby (2026)</p>
+          </div>
+          <span class="text-xs font-semibold px-2.5 py-1 bg-green-100 text-green-700 rounded-full">Working Prototype Pipeline</span>
+        </div>
+
+        <p class="text-sm text-gray-700 leading-relaxed">
+          Developed a comprehensive desktop machine learning evaluation framework designed to benchmark, train, and validate surrogate AI models for CFD error correction. The GUI integrates multi-model training (Random Forest, Gradient Boosting, Support Vector Regression, XGBoost, Gaussian Process Regression, and Deep Neural Networks) alongside interactive test-set validation plots ($R^2$, RMSE, MAE metrics).
+        </p>
+
+        <!-- EMIZ Image Insertion -->
+        <div class="bg-white p-3 rounded-lg border border-gray-200 shadow-inner">
+          <img src="EMIZ.jpg" alt="EMIZ Project GUI Prototype" class="w-full h-auto rounded border border-gray-300 shadow">
+          <p class="text-xs text-center text-gray-500 mt-2">GUI Interface for AI-based CFD Evaluation and Error Correction.</p>
+        </div>
+      </div>
+
+      <!-- 1. Principal Investigator (PI) Fellowship -->
+      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm border-l-4 border-l-blue-600 space-y-4">
+        <div class="flex justify-between items-start">
+          <div>
+            <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded">Principal Investigator (PI)</span>
+            <h3 class="font-bold text-gray-900 mt-1">StrucSure — Postdoctoral Research Fellowship</h3>
+            <p class="text-xs text-gray-500">Zhejiang Normal University (Apr 2023 – Apr 2025)</p>
+          </div>
+          <span class="text-xs font-bold text-green-700 bg-green-50 px-2.5 py-1 rounded">USD $16,000</span>
+        </div>
+        <p class="text-xs text-gray-600 mt-2 leading-relaxed">
+          Awarded individual postdoctoral research fellowship grant to design multi-modal AI inspection and fault diagnosis models integrating optical and acoustic sensors with Explainable AI (XAI). A snapshot of the monitoring dashboard is shown below.
+        </p>
+        <!-- StrucSure Image Insertion -->
+        <div class="bg-gray-50 p-3 rounded-lg border border-gray-100">
+          <img src="StrucSure Structural Health Monitoring Dashboard.png" alt="StrucSure SHM Dashboard" class="w-full h-auto rounded border border-gray-200 shadow">
+          <p class="text-xs text-center text-gray-500 mt-2">StrucSure Multi-Modal Structural Health Monitoring Dashboard Interface.</p>
+        </div>
+      </div>
+
+      <!-- 2. Active Research Projects (University of Derby) -->
+      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm border-l-4 border-l-emerald-600 space-y-4">
+        <div class="flex justify-between items-start">
+          <div>
+            <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">Active Institutional Projects</span>
+            <h3 class="font-bold text-gray-900 mt-1">Data Science & AI Research Initiatives</h3>
+            <p class="text-xs text-gray-500">University of Derby, UK (May 2025 – Present)</p>
+          </div>
+        </div>
+        
+        <ul class="text-xs text-gray-600 space-y-3 divide-y divide-gray-100">
+          <li class="pt-2">
+            <strong class="text-gray-900">Industrial Foundation Models (IFMs) for Diagnostics:</strong> Developing multi-modal foundation models integrating 1D time-series signals (vibration, acoustic, ultrasonic) and 2D spatial imaging for industrial fault diagnosis, anomaly detection, and prognostic health management.
+            <!-- IFM Image Insertion -->
+            <div class="bg-gray-50 p-3 rounded-lg border border-gray-100 mt-3">
+              <img src="IFM.jpg" alt="IFM Diagnostics Platform" class="w-full h-auto rounded border border-gray-200 shadow">
+              <p class="text-xs text-center text-gray-500 mt-2">Unified Industrial Fault Diagnosis and Anomaly Detection Platform.</p>
+            </div>
+          </li>
+          <li class="pt-2">
+            <strong class="text-gray-900">East Midlands Investment Zone (EMIZ) Hydrogen Project:</strong> Contributing AI and data modeling research for hydrogen port fuel injection retrofit optimization in freight locomotives.
+          </li>
+          <li class="pt-2">
+            <strong class="text-gray-900">Collaborative Multi-Partner Research Initiative:</strong> Assisting senior research colleagues on a multi-institutional partner project spanning data-driven engineering and digital society applications.
+          </li>
+        </ul>
+      </div>
+
+      <!-- 3. Key Research Team Member / AI Specialist Projects -->
+      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm space-y-6">
+        <h3 class="text-sm font-bold text-gray-900 border-b pb-2">Sponsored Industrial Grants (AI & Signal Processing Specialist)</h3>
+
+        <div>
+          <div class="flex justify-between items-start">
+            <div>
+              <span class="text-xs font-semibold text-gray-600 bg-gray-100 px-2 py-0.5 rounded">Research Team Member / AI Specialist</span>
+              <h4 class="font-bold text-gray-900 mt-1">SHSE Human-Centered Industrial AI System</h4>
+              <p class="text-xs text-gray-500">Ministry of Interior and Safety & KIAT, South Korea (2016 – 2019)</p>
+            </div>
+            <span class="text-xs font-bold text-gray-700 bg-gray-100 px-2.5 py-1 rounded">USD $1,000,000</span>
+          </div>
+          <p class="text-xs text-gray-600 mt-1">Contributed AI and signal processing models for real-time equipment fault diagnosis and health monitoring.</p>
+        </div>
+
+        <div class="pt-4 border-t border-gray-100 space-y-3">
+          <div class="flex justify-between items-start">
+            <div>
+              <span class="text-xs font-semibold text-gray-600 bg-gray-100 px-2 py-0.5 rounded">Research Team Member / AI Specialist</span>
+              <h4 class="font-bold text-gray-900 mt-1">Pipeline Leak Detection & Maintenance System</h4>
+              <p class="text-xs text-gray-500">Kyungdong City Gas & MOTIE, South Korea (2018 – 2019)</p>
+            </div>
+            <div class="text-right">
+              <span class="text-xs font-bold text-gray-700 bg-gray-100 px-2.5 py-1 rounded">USD $350,000</span>
+              <span class="block text-[10px] text-green-700 font-semibold mt-1">Completed: 2019</span>
+            </div>
+          </div>
+          <p class="text-xs text-gray-600 leading-relaxed">
+            Developed data-driven acoustic emission (AE) signal processing, feature transformation pipelines, and deep learning classification algorithms for micro-leak detection and structural fault evaluation.
+          </p>
+          <!-- Pipeline Diagnostics Image Insertion -->
+          <div class="bg-gray-50 p-3 rounded-lg border border-gray-100 mt-3 hover:shadow-lg transition-shadow">
+            <img src="Industrial Pipeline Diagnostics Dashboard.png" alt="Industrial Pipeline Diagnostics Dashboard" class="w-full h-auto rounded border border-gray-200 shadow">
+            <p class="text-xs text-center text-gray-500 mt-2">GUI for AE Feature Extraction, Model Development, and Evaluation Metrics.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. TEACHING & SUPERVISION TAB -->
+    <div id="content-teaching" class="tab-content hidden space-y-4">
+      <h2 class="text-xl font-bold text-gray-900 mb-4">Teaching & Student Supervision</h2>
+      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm">
+        <h3 class="font-bold text-gray-900 text-sm mb-2">MSc & BSc Research Supervisions</h3>
+        <ul class="text-xs text-gray-600 space-y-2 list-disc list-inside">
+          <li><strong>Mirza Bilal</strong> (MSc Co-Supervisor, ZJNU China, 2023-Ongoing) — Formation Pressure Prediction and Kick Detection Dataset for Oil/Gas Well Drilling Rigs</li>
+          <li><strong>Ali Haider</strong> (MSc Supervisor, LGU Pakistan, 2021-2023) — Application of Deep Learning for Surface Crack Detection in Concrete Structures</li>
+          <li><strong>Ayesha Ghaffar</strong> (MSc Supervisor, LGU Pakistan, 2020-2023) — Automated Analysis of Sleep Study Parameters using AI</li>
+          <li><strong>Shahid Muneer</strong> (MSc Supervisor, LGU Pakistan, 2020-2023) — A Data Driven Gearbox Fault Identification Mechanism Under speed and Load Fluctuations</li>
+          <li><strong>Adeel Riaz</strong> (MSc Supervisor, LGU Pakistan, 2020-2022) — Detection of Lung Cancer using Artificial Intelligence and Computed Tomography images</li>
+          <li><strong>Zulqernain Abbas</strong> (MSc Supervisor, LGU Pakistan, 2020-2022) — Gearbox Fault Diagnosis Under Uneven Working Conditions</li>
+          <li><strong>Sehar Afzal</strong> (MSc Supervisor, LGU Pakistan, 2020-2022) — Anomalous Behavior Detection Mechanism for IoT Devices Using Deep Learning</li>
+          <li><strong>Abdullah Tahir & Dur-e-Nayab</strong> (BSc Thesis Mentors, LGU Pakistan, 2021) — InternEase Platform</li>
+          <li><strong>Muhammad Kashif & Nomair Sagheer</strong> (BSc Thesis Mentors, LGU Pakistan, 2021) — Embedded Solution for Indoor Fire Detection</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 6. AWARDS TAB -->
+    <div id="content-awards" class="tab-content hidden space-y-4">
+      <h2 class="text-xl font-bold text-gray-900 mb-4">Awards, Honors & Scholarships</h2>
+      <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm">
+        <ul class="text-xs text-gray-700 space-y-2 list-disc list-inside">
+          <li><strong>Postdoctoral Research Fellowship</strong> — Zhejiang Normal University, China (2023–2025)</li>
+          <li><strong>BK21+ Research Excellency Award</strong> — KR Govt. / University of Ulsan, KR (2018, 2019, 2020)</li>
+          <li><strong>BK21+ Overseas Traveling Grant (Conference)</strong> — KR Govt. / UOU, KR (2017, 2018)</li>
+          <li><strong>BK21+ Domestic Traveling (Conference) Grant</strong> — KR Govt. / UOU, KR</li>
+          <li><strong>Highly Cited Paper Award</strong> — MDPI Energies (2022, 2023)</li>
+          <li><strong>Brain Korea (BK21) Fellowship</strong> — KR Govt. / UOU, KR (2016–2019)</li>
+          <li><strong>President Scholarship</strong> — University of Ulsan, KR (2016–2018)</li>
+        </ul>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById('content-' + tabId).classList.remove('hidden');
+      document.getElementById('tab-' + tabId).classList.add('active');
+    }
+
+    function filterPubs() {
+      const input = document.getElementById('pubSearch').value.toLowerCase();
+      const items = document.querySelectorAll('.pub-item');
+      items.forEach(item => {
+        const text = item.innerText.toLowerCase();
+        item.style.display = text.includes(input) ? '' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>
